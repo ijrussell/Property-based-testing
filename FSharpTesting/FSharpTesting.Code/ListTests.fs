@@ -15,13 +15,13 @@ let ``Length is the same``() =
     sorted.Length |> should equal original.Length
 
 [<Test>]
-let ``Contains then same chars``() =
+let ``Contains the same chars``() =
     let a = original |> List.countBy (fun x -> x) |> Set.ofList
     let b = original |> sort |> List.countBy (fun x -> x) |> Set.ofList
     let diff = Set.difference a b
     diff |> should equal []
 
 [<Test>]
-let ``Each pair is sorted correctlt``() =
+let ``Each pair is sorted correctly``() =
     let x = original |> sort |> List.pairwise |> List.fold (fun acc elem -> acc && fst elem <= snd elem) true
     x |> should equal true

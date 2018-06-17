@@ -53,15 +53,15 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="App.config" />
+    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Copy of ExampleTestsFizzBuzz.fs" />
+    <Compile Include="ExampleTests.fs" />
     <Compile Include="PropertyTests1.fs" />
+    <Compile Include="PropertyTests1Refactored.fs" />
     <Compile Include="PropertyTests1RefactoredFsCheck.fs" />
     <Compile Include="PropertyTests2FsCheckDiamondKata.fs" />
     <Compile Include="PropertyTests2FsCheckDiamondKataFinal.fs" />
     <Compile Include="FsCheckDummyDataExample.fs" />
-    <Compile Include="Copy of AssemblyInfo.fs" />
-    <Compile Include="Copy of ExampleTests.fs" />
-    <Compile Include="Copy of PropertyTests1Refactored.fs" />
     <Compile Include="ListTests.fs" />
   </ItemGroup>
   <ItemGroup>
